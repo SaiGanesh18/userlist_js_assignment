@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Content area to accommodate table and form */
+#content {
+  padding-bottom: 100px; /* Space for fixed form at the bottom */
+  max-height: calc(100vh - 100px); /* Ensure content fits within the viewport */
+  overflow-y: auto; /* Allow scrolling */
+}
+
+/* Table styling */
+.table-responsive {
+  max-height: calc(
+    100vh - 160px
+  ); /* Set max height for table, accounting for form */
+  overflow-y: auto; /* Enable vertical scrolling for the table */
+  margin-bottom: 20px; /* Space between table and form */
+}
+
+/* Sticky table header */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  background-color: #343a40;
+  z-index: 2;
+}
+
+/* Form at the bottom */
+form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
